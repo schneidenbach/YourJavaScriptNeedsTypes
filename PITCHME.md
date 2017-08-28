@@ -51,6 +51,18 @@ function Test() {
 }
 
 var t = Test();
+```
+
+---
+
+```javascript
+window.WhoAmI = "I'm the window object";
+
+function Test() {
+  this.WhoAmI = "I'm the Test object";
+}
+
+var t = Test();
 alert(window.WhoAmI);   // I'm the Test object
 alert(t.WhoAmI);        // t is undefined
 ```
@@ -149,6 +161,10 @@ Number two thing you can do:
 
 ---
 
+![](assets/reddit.png)
+
+---
+
 ## Reddit
 Wanted a language with a type system
 > Types **serve as documentation at the micro-level**, help ensure correctness (to a certain degree), and most importantly, make refactoring code less stressful.
@@ -181,6 +197,29 @@ interface Person {
     lastName: string;
     age?: number;
 }
+```
+
+---
+
+### For example
+
+```typescript
+interface Person {
+    firstName: string;
+    lastName: string;
+    age?: number;
+}
+
+let amy: Person = {
+    firstName: "Amy",
+    lastName: "George"
+};
+
+let michael: Person = {
+    firstName: "Michael",
+    lastName: "Turner",
+    age: 45
+};
 ```
 
 ---
@@ -220,6 +259,10 @@ interface Person {
 > Using a typed language in our frontend has already paid dividends: our code has fewer type-related bugs, we are more confident making large refactors, and **our inline documentation is focused around concepts** instead of object shapes and function parameters. 
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
+
+---
+
+![](assets/slack.jpg)
 
 ---
 
@@ -299,7 +342,7 @@ function ajaxRequest(urlOrOptions: string | AjaxOptions) {
 
 ---
 
-###  Implicit Types
+###  Variables
 
 Variables and functions will be given types where possible
 
@@ -310,7 +353,7 @@ let aNumber = 42;   //aNumber is inferred to be type 'number'
 If you mix types, TypeScript/Flow will show an error
 
 ```typescript
-let aNumber = 42;
+let aNumber: number = 42;
 aNumber = "forty two";  //Error: aNumber is of type number
 ```
 
@@ -376,9 +419,15 @@ console.log(abomination.hasSharpTeeth); //valid!
 
 ## Tooling
 
-* Intellisense
 * Squigglies
+* Intellisense
 * Refactoring
+
+---
+
+## Squiggles
+
+![](assets/safety.png)
 
 ---
 
@@ -394,9 +443,9 @@ console.log(abomination.hasSharpTeeth); //valid!
 
 ---
 
-## Squiggles
+## Type Definitions in TypeScript
 
-![](assets/safety.png)
+`npm install @types/jquery`
 
 ---
 
@@ -448,7 +497,7 @@ function ajaxRequest(urlOrOptions: string | AjaxOptions) {}
 
 ---
 
-## Type add meaning to your code
+## Types add meaning to your code
 
 ---
 
@@ -527,7 +576,7 @@ function operate(num1: number, num2: number, op: string): number {
 ## TypeScript
 excellent community support  
 excellent tooling  
-Has modern language features
+Has modern language features  
 More turnkey for .NET folks
 
 ---
@@ -566,7 +615,9 @@ More turnkey for .NET folks
 
 ## Criteria for choosing
 
-Does your javascript need types if you're doing a small project? **probably not**
-Does your javascript need types if you're adding an animation to a WebForms page stuck in a script tag? **no**
-Is the JS code base large? **yes** 
+Does your javascript need types if you're doing a small project? **probably not**  
+Does your javascript need types if you're adding an animation to a WebForms page stuck in a script tag? **no**  
+Is the JS code base large? **yes**  
 Do you need to refactor often? **YES**
+---
+# Questions?
