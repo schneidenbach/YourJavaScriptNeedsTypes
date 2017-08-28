@@ -8,6 +8,10 @@
 
 ---
 
+![](assets/theweb.jpg)
+
+---
+
 ![](assets/aspnetmvc.png)
 
 ---
