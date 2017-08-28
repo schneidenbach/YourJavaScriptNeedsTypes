@@ -127,10 +127,10 @@ Number one thing you can do:
 
 ---
 
-Number one thing you can do:<br>
-<span class="orange">understand JavaScript completely</span>  
+<span class="orange">Number one thing you can do:</span>  
+understand JavaScript completely  
 be perfect 100% of the time  
-<span class="orange">write tests</span>
+write tests
 
 ---
 
