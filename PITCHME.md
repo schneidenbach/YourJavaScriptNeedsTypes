@@ -14,7 +14,7 @@ Of course we;re talking about JAVASCRIPT
 
 ---
 
-JAVASCRIPT IS WEIRD.
+# JAVASCRIPT IS WEIRD.
 
 ---
 
@@ -27,14 +27,14 @@ var orders = customer.getOrders();
 
 ```javascript
 var customer = repo.getCustomer(id);
-var orders = customer.getOrder<span style="text-color: red">e</span>s();
+var orders = customer.getOrderes();
 ```
 
 ---
 
 ```javascript
 var customer = repo.getCustomer(id);
-var orders = customer.<span style="text-color: red">getHorDoeuvres</span>();
+var orders = customer.getHorDoeuvres();
 ```
 
 ---
@@ -64,7 +64,7 @@ function Test() {
   this.WhoAmI = "I'm the Test object";
 }
 
-var t = <span style="text-color: red">new</span> Test();
+var t = new Test();
 alert(window.WhoAmI);   // I'm the window object
 alert(t.WhoAmI);        // I'm the Test object
 ```
@@ -84,7 +84,7 @@ Code | Returns
 
 ---
 
-JAVASCRIPT IS WEIRD.
+# JAVASCRIPT IS WEIRD.
 
 ---
 
@@ -97,13 +97,14 @@ Number one thing you can do:
 ---
 
 Number one thing you can do:<br>
-understand JavaScript
+<span class="orange">understand JavaScript</span>
+
 ---
 
-Number one thing you can do:<br>
-understand JavaScript<br>
+Number one thing you can do:  
+<span class="orange">understand JavaScript</span>
 
-THIS IS HARD.
+# THIS IS HARD.
 
 ---
 
@@ -111,32 +112,32 @@ Number two thing you can do:
 
 ---
 
-Number two thing you can do:<br>
-use a type system
+Number two thing you can do:  
+<span class="orange">use a type system</span>
 
 ---
 
-Type Systems
+## Type Systems
 
 ---
 
-Type systems are all about adding certainty
+<span class="orange">Type systems</span> are all about adding certainty
 
 ---
 
-Type systems are all about adding certainty
+<span class="orange">Type systems</span> are all about adding certainty  
 (As .NET folks we can definitely understand this)
 
 ---
 
-Type systems are all about adding certainty  
+<span class="orange">Type systems</span> are all about adding certainty  
 (As .NET folks we can definitely understand this)  
 
 (...unless we use VB.NET with Option Strict Off)
 
 ---
 
-Advantages of type systems
+## Advantages of type systems
 
 1. Safety
 2. Tooling
@@ -185,7 +186,14 @@ interface Person {
 ---
 
 ## Reddit
-> **Another consideration was the speed of development.** We wanted to add types because we wanted to move quickly. This sounds a bit antithetical to how many people view types, in that it adds overhead to development and therefore slows developers down. **However, in moving quickly, it is much easier to introduce bugs.**
+> **Another consideration was the speed of development.** We wanted to add types because we wanted to move quickly. 
+
+[source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
+
+---
+
+## Reddit
+> This sounds a bit antithetical to how many people view types, in that it adds overhead to development and therefore slows developers down. **However, in moving quickly, it is much easier to introduce bugs.**
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -217,7 +225,7 @@ interface Person {
 
 ## How about Slack?
 
-> First, we were **surprised by the number of small bugs we found when converting our code**. Talking to other developers who began using a type checker, we were delighted to hear that this was a common experience: **the more lines of code a human writes**, the more inevitable it becomes to misspell a property, assume the parent of a nested object to always exist, or to use a non-standard error object.
+> First, we were **surprised by the number of small bugs we found when converting our code**... **the more lines of code a human writes**, the more inevitable it becomes to misspell a property, assume the parent of a nested object to always exist, or to use a non-standard error object.
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -225,7 +233,7 @@ interface Person {
 
 ## Slack
 
-> Second, we **underestimated how powerful the editor integration is**. Thanks to TypeScript’s language service, editors with an autocomplete function can support the development with context-aware suggestions. **TypeScript understands which properties and methods are available on certain objects, enabling your editor to do the same.** An autocomplete system that only uses words in the current document feels barbaric afterward.
+> Second, we **underestimated how powerful the editor integration is**... TypeScript understands which properties and methods are available on certain objects, enabling your editor to do the same.
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -374,6 +382,16 @@ console.log(abomination.hasSharpTeeth); //valid!
 
 ---
 
+## Intellisense
+
+![](assets/tooling1.gif)
+
+---
+
+## Intellisense
+
+![](assets/tooling2.gif)
+
 ---
 
 ## Squiggles
@@ -386,43 +404,169 @@ console.log(abomination.hasSharpTeeth); //valid!
 
 ![](assets/refactor.gif)
 
+---
 
-Let's take you through some of the things you get
+## Self-documenting code
+
+```typescript
+type HttpRequestType = "GET" | "POST" | "PUT";
+
+interface AjaxOptions {
+    url: string;
+    type: HttpRequestType;
+}
+
+function ajaxRequest(urlOrOptions: string | AjaxOptions) {}
+```
+
+---
+
+## Not self-documenting code
+
+```typescript
+function ajaxRequest(urlOrOptions) {}
+```
+
+---
+
+## Self-documenting code
+
+```typescript
+type HttpRequestType = "GET" | "POST" | "PUT";
+
+interface AjaxOptions {
+    url: string;
+    type: HttpRequestType;
+}
+
+function ajaxRequest(urlOrOptions: string | AjaxOptions) {}
+```
+
+--- 
+
+![](assets/intellisense.gif)
+
+---
+
+## Type add meaning to your code
+
+---
+
+Ok, so you want to use a type system.  Which one?
+
+---
+
+## Flow
+Is a checker, not a language  
+You need to remove the type annotations using some kind of build step - babel is a good example  
+Better type inference
+
+---
+
+## In TypeScript, this subtly breaks
+
+```typescript
+function operate(num1: number, num2: number, op: string) {
+    if (op === "add") {
+        return num1 + num2;
+    }
+}
+
+let result = operate(4, 1, "subtract");
+//result: undefined
+```
+
+---
+
+## In TypeScript, this subtly breaks
+
+```typescript
+function operate(num1: number, num2: number, op: string) {
+    if (op === "add") {
+        return num1 + num2;
+    }
+}
+
+let result = operate(4, 1, "subtract");
+//result: undefined
+
+result.toString(); //blows up
+```
+
+---
+
+## In Flow, return type correctly interpreted
+
+```typescript
+function operate(num1: number, num2: number, op: string) {
+    if (op === "add") {
+        return num1 + num2;
+    }
+}
+
+let result = operate(4, 1, "subtract");
+result.toString();  //error!
+```
+
+---
+
+## Way around: use type on function
+
+```typescript
+function operate(num1: number, num2: number, op: string): number {
+    if (op === "add") {
+        return num1 + num2;
+    }
+    //ERROR: return missing
+}
+
+```
+
+---
+
+## TypeScript
+excellent community support  
+excellent tooling  
+Has modern language features
+More turnkey for .NET folks
+
+---
+
+## Confession time
+
+---
+
+## Let's take you through some of the challenges
+
+---
+
+## Advantages of type systems
 
 1. Safety
 2. Tooling
 3. Self-documenting code
-4. Sometimes, advanced language features (if you use TypeScript)
 
+---
 
+## Disadvantages
 
+* Yet Another Language to Learn
+* Altered workflow
+* You aren't taking advantage of JavaScript's best part: it pretend like it's gonna work
 
+---
 
-Ok, so you're using a type system.  Which one?
+## Disadvantages
 
-Flow
-Is a checker, not a language
-You need to remove the type annotations using some kind of build step - babel is a good example
-Better type inference
+* Yet Another Language to Learn
+* Altered Workflow
+* You aren't taking advantage of JavaScript's best part: it pretend like it's gonna work (just kidding)
 
-(example of a function that returns number or undefined)
+---
 
-TypeScript
-extreme community support
-tooling great
-Has modern language features
-More turnkey for .NET folks
+## Criteria for choosing
 
-
-Let's take you through some of the challenges
-
-Does your javascript need types if you're doing a small project? probably not
-Does your javascript need types if you're adding an animation to a WebForms page stuck in a script tag? no
-Is the JS code base large?
-Do you need to refactor often?
-
-Confession: the talk is named your javascript needs types, but yeah that's a lie
-1. Yet Another Language to Learn
-2. Altered Workflow
-3. You aren't taking advantage of JavaScript's best part: it pretend like it's gonna work (just kidding)
-
+Does your javascript need types if you're doing a small project? **probably not**
+Does your javascript need types if you're adding an animation to a WebForms page stuck in a script tag? **no**
+Is the JS code base large? **yes** 
+Do you need to refactor often? **YES**
