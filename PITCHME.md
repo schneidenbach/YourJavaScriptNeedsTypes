@@ -134,8 +134,10 @@ write tests
 
 ---
 
-Number one thing you can do:  
-<span class="orange">understand JavaScript</span>
+<span class="orange">Number one thing you can do:</span>  
+understand JavaScript completely  
+be perfect 100% of the time  
+write tests
 
 # THIS IS HARD.
 
