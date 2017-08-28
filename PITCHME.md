@@ -54,7 +54,11 @@ var orders = customer.getHorDoeuvres();
 
 ---
 
-`this`
+# `this`
+
+---
+
+![](assets/this.png)
 
 ---
 
