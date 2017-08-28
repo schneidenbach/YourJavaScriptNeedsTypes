@@ -1,16 +1,27 @@
 # Your JavaScript Needs Types
 
+### @schneidenbach
+
 ---
 
-America, we need to have a talk
-(american flag here)
-not talking about why you're still writing VB6 sometimes or whatever
-We need to have a conversation about the web
+![](assets/americanflag.png)
 
-the web is more than the webforms apps we've been writing for a while and more than MVC, Rails, Django, whatever it is you use
-Of course we;re talking about JAVASCRIPT
+---
 
+![](assets/aspnetmvc.png)
 
+---
+
+![](assets/aspnetwebforms.gif)
+
+---
+
+![](assets/css.gif)
+
+---
+
+Let's start with the
+# ONE inalienable truth
 
 ---
 
