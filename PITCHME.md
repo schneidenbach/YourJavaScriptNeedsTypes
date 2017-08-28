@@ -190,7 +190,7 @@ Number two thing you can do:
 
 ## Reddit
 Wanted a language with a type system
-> Types <span class="orange">serve as documentation at the micro-level</span>, help ensure correctness (to a certain degree), and most importantly, make refactoring code less stressful.
+> Types <span class="orange">serve as documentation at the micro-level</span>, help ensure correctness..., and make refactoring code less stressful.
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -198,7 +198,7 @@ Wanted a language with a type system
 
 ## Reddit
 Wanted a language with a type system
-> Types serve as documentation at the micro-level, <span class="orange">help ensure correctness</span>..., and most importantly, make refactoring code less stressful.
+> Types serve as documentation at the micro-level, <span class="orange">help ensure correctness</span>..., and make refactoring code less stressful.
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -206,7 +206,7 @@ Wanted a language with a type system
 
 ## Reddit
 Wanted a language with a type system
-> Types serve as documentation at the micro-level, help ensure correctness (to a certain degree), and most importantly, make <span class="orange">refactoring code less stressful</span>.
+> Types serve as documentation at the micro-level, help ensure correctness..., and make <span class="orange">refactoring code less stressful</span>.
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -348,7 +348,7 @@ function ajaxRequest(urlOrOptions: string | AjaxOptions) {
 
 ---
 
-## Advantages of type systems
+## <span class="orange">Advantages of type systems</span>
 
 1. Safety
 2. Tooling
@@ -466,7 +466,7 @@ console.log(abomination.hasSharpTeeth); //valid!
 
 ---
 
-## Type Definitions in TypeScript
+### Type Definitions in TypeScript
 
 `npm install @types/jquery`
 
@@ -520,7 +520,7 @@ function ajaxRequest(urlOrOptions: string | AjaxOptions) {}
 
 ---
 
-## Types add meaning to your code
+### Types add meaning to your code
 
 ---
 
@@ -628,20 +628,20 @@ More turnkey for .NET folks
 
 ---
 
-## Disadvantages
+## <span class="orange">Disadvantages</span>
 
 * Yet Another Language to Learn
-* Altered Workflow
+* Altered workflow
 * You aren't taking advantage of JavaScript's best part: it pretend like it's gonna work (just kidding)
 
 ---
 
 ## Criteria for choosing
 
-Does your javascript need types if you're doing a small project? **probably not**  
-Does your javascript need types if you're adding an animation to a WebForms page stuck in a script tag? **no**  
-Is the JS code base large? **yes**  
-Do you need to refactor often? **YES**
+Does your javascript need types if you're doing a small project? <span class="orange">**probably not**</span>  
+Does your javascript need types if you're adding an animation to a WebForms page stuck in a script tag? <span class="orange">**no**</span>  
+Is the JS code base large? <span class="orange">**yes**</span>  
+Do you need to refactor often? <span class="orange">**YES**</span>
 
 ---
 
