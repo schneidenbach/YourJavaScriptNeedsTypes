@@ -128,7 +128,9 @@ Number one thing you can do:
 ---
 
 Number one thing you can do:<br>
-<span class="orange">understand JavaScript</span>
+<span class="orange">understand JavaScript completely</span>  
+be perfect 100% of the time  
+<span class="orange">write tests</span>
 
 ---
 
@@ -152,23 +154,23 @@ Number two thing you can do:
 
 ---
 
-<span class="orange">Type systems</span> are all about adding certainty
+<span class="orange">Type systems</span> are all about adding <span class="orange">certainty</span>
 
 ---
 
-<span class="orange">Type systems</span> are all about adding certainty  
+<span class="orange">Type systems</span> are all about adding <span class="orange">certainty</span>  
 (As .NET folks we can definitely understand this)
 
 ---
 
-<span class="orange">Type systems</span> are all about adding certainty  
+<span class="orange">Type systems</span> are all about adding <span class="orange">certainty</span>  
 (As .NET folks we can definitely understand this)  
 
 (...unless we use VB.NET with Option Strict Off)
 
 ---
 
-## Advantages of type systems
+## <span class="orange">Advantages of type systems</span>
 
 1. Safety
 2. Tooling
@@ -186,7 +188,7 @@ Number two thing you can do:
 
 ## Reddit
 Wanted a language with a type system
-> Types **serve as documentation at the micro-level**, help ensure correctness (to a certain degree), and most importantly, make refactoring code less stressful.
+> Types <span class="orange">serve as documentation at the micro-level</span>, help ensure correctness (to a certain degree), and most importantly, make refactoring code less stressful.
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -194,7 +196,7 @@ Wanted a language with a type system
 
 ## Reddit
 Wanted a language with a type system
-> Types serve as documentation at the micro-level, **help ensure correctness (to a certain degree)**, and most importantly, make refactoring code less stressful.
+> Types serve as documentation at the micro-level, <span class="orange">help ensure correctness</span>..., and most importantly, make refactoring code less stressful.
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -202,7 +204,7 @@ Wanted a language with a type system
 
 ## Reddit
 Wanted a language with a type system
-> Types serve as documentation at the micro-level, help ensure correctness (to a certain degree), and most importantly, make **refactoring code less stressful**.
+> Types serve as documentation at the micro-level, help ensure correctness (to a certain degree), and most importantly, make <span class="orange">refactoring code less stressful</span>.
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -244,14 +246,14 @@ let michael: Person = {
 ---
 
 ## Reddit
-> **Another consideration was the speed of development.** We wanted to add types because we wanted to move quickly. 
+> <span class="orange">Another consideration was the speed of development.</span> We wanted to add types because we wanted to move quickly. 
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
 ---
 
 ## Reddit
-> This sounds a bit antithetical to how many people view types, in that it adds overhead to development and therefore slows developers down. **However, in moving quickly, it is much easier to introduce bugs.**
+> This sounds a bit antithetical to how many people view types, in that it adds overhead to development and therefore slows developers down. <span class="orange">However, in moving quickly, it is much easier to introduce bugs.</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -259,7 +261,7 @@ let michael: Person = {
 
 ## The result?
 
-> Using a typed language in our frontend has already paid dividends: our **code has fewer type-related bugs**, we are more confident making large refactors, and our inline documentation is focused around concepts instead of object shapes and function parameters. 
+> Using a typed language in our frontend has already paid dividends: our <span class="orange">code has fewer type-related bugs</span>, we are more confident making large refactors, and our inline documentation is focused around concepts instead of object shapes and function parameters. 
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -267,7 +269,7 @@ let michael: Person = {
 
 ## The result?
 
-> Using a typed language in our frontend has already paid dividends: our code has fewer type-related bugs, **we are more confident making large refactors**, and our inline documentation is focused around concepts instead of object shapes and function parameters. 
+> Using a typed language in our frontend has already paid dividends: our code has fewer type-related bugs, <span class="orange">we are more confident making large refactors</span>, and our inline documentation is focused around concepts instead of object shapes and function parameters. 
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -275,7 +277,7 @@ let michael: Person = {
 
 ## The result?
 
-> Using a typed language in our frontend has already paid dividends: our code has fewer type-related bugs, we are more confident making large refactors, and **our inline documentation is focused around concepts** instead of object shapes and function parameters. 
+> Using a typed language in our frontend has already paid dividends: our code has fewer type-related bugs, we are more confident making large refactors, and <span class="orange">our inline documentation is focused around concepts</span> instead of object shapes and function parameters. 
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -287,7 +289,7 @@ let michael: Person = {
 
 ## How about Slack?
 
-> First, we were **surprised by the number of small bugs we found when converting our code**... **the more lines of code a human writes**, the more inevitable it becomes to misspell a property, assume the parent of a nested object to always exist, or to use a non-standard error object.
+> First, we were <span class="orange">surprised by the number of small bugs we found when converting our code</span>... the more lines of code a human writes, the more inevitable it becomes to misspell a property, assume the parent of a nested object to always exist, or to use a non-standard error object.
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -295,7 +297,7 @@ let michael: Person = {
 
 ## Slack
 
-> Second, we **underestimated how powerful the editor integration is**... TypeScript understands which properties and methods are available on certain objects, enabling your editor to do the same.
+> Second, we <span class="orange">underestimated how powerful the editor integration is</span>... TypeScript understands which properties and methods are available on certain objects, enabling your editor to do the same.
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -524,14 +526,14 @@ Ok, so you want to use a type system.  Which one?
 
 ---
 
-## Flow
+### <span class="orange">Flow</span>
 Is a checker, not a language  
 You need to remove the type annotations using some kind of build step - babel is a good example  
 Better type inference
 
 ---
 
-## In TypeScript, this subtly breaks
+### In TypeScript, this subtly breaks
 
 ```typescript
 function operate(num1: number, num2: number, op: string) {
@@ -546,7 +548,7 @@ let result = operate(4, 1, "subtract");
 
 ---
 
-## In TypeScript, this subtly breaks
+### In TypeScript, this subtly breaks
 
 ```typescript
 function operate(num1: number, num2: number, op: string) {
@@ -563,7 +565,7 @@ result.toString(); //blows up
 
 ---
 
-## In Flow, return type correctly interpreted
+### In Flow, return type correctly interpreted
 
 ```typescript
 function operate(num1: number, num2: number, op: string) {
@@ -578,7 +580,7 @@ result.toString();  //error!
 
 ---
 
-## Way around: use type on function
+### Way around: use type annotation on function
 
 ```typescript
 function operate(num1: number, num2: number, op: string): number {
@@ -592,7 +594,7 @@ function operate(num1: number, num2: number, op: string): number {
 
 ---
 
-## TypeScript
+## <span class="orange">TypeScript</span>
 excellent community support  
 excellent tooling  
 Has modern language features  
@@ -608,7 +610,7 @@ More turnkey for .NET folks
 
 ---
 
-## Advantages of type systems
+## <span class="orange">Advantages</span> of type systems
 
 1. Safety
 2. Tooling
@@ -616,7 +618,7 @@ More turnkey for .NET folks
 
 ---
 
-## Disadvantages
+## <span class="orange">Disadvantages</span>
 
 * Yet Another Language to Learn
 * Altered workflow
@@ -638,5 +640,7 @@ Does your javascript need types if you're doing a small project? **probably not*
 Does your javascript need types if you're adding an animation to a WebForms page stuck in a script tag? **no**  
 Is the JS code base large? **yes**  
 Do you need to refactor often? **YES**
+
 ---
-# Questions?
+
+# <span class="orange">Questions?</span>
