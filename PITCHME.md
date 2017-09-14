@@ -142,13 +142,18 @@ be perfect 100% of the time
 ---
 
 ### <span class="orange">Most important things you can do:</span>  
+write tests
+
+---
+
+### <span class="orange">Most important things you can do:</span>  
 understand JavaScript completely  
 be perfect 100% of the time  
 write tests
 
 ---
 
-<span class="orange">Most important things you can do:</span>  
+### <span class="orange">Most important things you can do:</span>  
 understand JavaScript completely  
 be perfect 100% of the time  
 write tests
@@ -204,23 +209,28 @@ Number two thing you can do:
 
 ## Reddit
 Wanted a language with a type system
-> <span class="orange">serve as documentation at the micro-level</span>
+
+---
+
+## Reddit
+### Types
+serve as <span class="orange">documentation at the micro-level</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
 ---
 
 ## Reddit
-Wanted a language with a type system
-> <span class="orange">help ensure correctness</span>
+### Types
+help ensure <span class="orange">correctness</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
 ---
 
 ## Reddit
-Wanted a language with a type system
-> <span class="orange">makes refactoring code less stressful</span>.
+### Types
+makes <span class="orange">refactoring code less stressful</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -262,14 +272,14 @@ let michael: Person = {
 ---
 
 ## Reddit
-> <span class="orange">Another consideration was the speed of development.</span> 
+Another consideration was the <span class="orange">speed of development</span> 
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
 ---
 
 ## Reddit
-> <span class="orange">We wanted to add types because we wanted to move quickly.</span>
+We wanted to add types because we <span class="orange">wanted to move quickly</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -284,7 +294,7 @@ let michael: Person = {
 
 ## The result?
 
-> <span class="orange">our code has fewer type-related bugs</span>
+our code has <span class="orange">fewer type-related bugs</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -292,7 +302,7 @@ let michael: Person = {
 
 ## The result?
 
-> <span class="orange">we are more confident making large refactors</span>
+we are more <span class="orange">confident making large refactors</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -300,7 +310,7 @@ let michael: Person = {
 
 ## The result?
 
-> <span class="orange">our inline documentation is focused around concepts</span> instead of object shapes and function parameters. 
+<span class="orange">our inline documentation is focused around concepts</span> instead of object shapes and function parameters
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -312,7 +322,7 @@ let michael: Person = {
 
 ## How about Slack?
 
-> <span class="orange">we were surprised by the number of small bugs we found when converting our code</span>... the more lines of code a human writes, the more inevitable it becomes to misspell a property, assume the parent of a nested object to always exist, or to use a non-standard error object.
+we were surprised by the <span class="orange">number of small bugs we found</span> when converting our code
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -320,7 +330,26 @@ let michael: Person = {
 
 ## How about Slack?
 
-> <span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to misspell a property, assume the parent of a nested object to always exist, or to use a non-standard error object.
+> <span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to:  
+misspell a property
+
+[source](https://slack.engineering/typescript-at-slack-a81307fa288d)
+
+---
+
+## How about Slack?
+
+> <span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to:  
+assume the parent of a nested object to always exist
+
+[source](https://slack.engineering/typescript-at-slack-a81307fa288d)
+
+---
+
+## How about Slack?
+
+> <span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to:  
+use a non-standard error object
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -328,7 +357,7 @@ let michael: Person = {
 
 ## Slack
 
-> Second, we <span class="orange">underestimated how powerful the editor integration is</span>
+Second, we underestimated how <span class="orange">powerful the editor integration</span> is
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -336,7 +365,7 @@ let michael: Person = {
 
 ## Slack
 
-> Second, we <span class="orange">TypeScript understands which properties and methods are available on certain objects</span>, enabling your editor to do the same.
+<span class="orange">TypeScript understands which properties and methods are available on certain objects</span>, enabling your editor to do the same.
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -379,7 +408,7 @@ function ajaxRequest(urlOrOptions: string | AjaxOptions) {
 
 ## I love this line
 
-> An autocomplete system that only uses words in the current document feels barbaric afterward.
+> An autocomplete system that only uses words in the current document <span class="orange">feels barbaric</span> afterward.
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
