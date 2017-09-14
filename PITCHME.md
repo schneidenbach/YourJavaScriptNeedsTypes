@@ -288,7 +288,7 @@ We wanted to add types because we <span class="orange">wanted to move quickly</s
 ---
 
 ## Reddit
-<span class="orange">in moving quickly, it is much easier to introduce bugs</span>
+in moving quickly, <span class="orange">it is much easier to introduce bugs</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
