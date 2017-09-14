@@ -1,10 +1,14 @@
-# Your JavaScript Needs Types
+# Your <span class="orange">JavaScript</span> Needs <span class="orange">Types</span>
 
 ### @schneidenbach
 
 ---
 
 ![](assets/americanflag.png)
+
+---
+
+![](assets/polishflag.jpg)
 
 ---
 
@@ -25,11 +29,11 @@
 ---
 
 Let's start with the
-# ONE inalienable truth
+# ONE <span class="orange">inalienable truth</span>
 
 ---
 
-# JAVASCRIPT IS WEIRD.
+# JAVASCRIPT IS <span class="orange">WEIRD</span>.
 
 ---
 
@@ -115,26 +119,36 @@ Code | Returns
 
 ---
 
-# JAVASCRIPT IS WEIRD.
+# JAVASCRIPT IS <span class="orange">WEIRD</span>.
 
 ---
 
-So how can we make the weird less weird?
+So how can we make the weird <span class="orange">less weird</span>?
 
 ---
 
-Number one thing you can do:
+### Most important things you can do:
 
 ---
 
-<span class="orange">Number one thing you can do:</span>  
+### <span class="orange">Most important things you can do:</span>  
+understand JavaScript completely
+
+---
+
+### <span class="orange">Most important things you can do:</span>  
+be perfect 100% of the time
+
+---
+
+### <span class="orange">Most important things you can do:</span>  
 understand JavaScript completely  
 be perfect 100% of the time  
 write tests
 
 ---
 
-<span class="orange">Number one thing you can do:</span>  
+<span class="orange">Most important things you can do:</span>  
 understand JavaScript completely  
 be perfect 100% of the time  
 write tests
@@ -190,7 +204,7 @@ Number two thing you can do:
 
 ## Reddit
 Wanted a language with a type system
-> Types <span class="orange">serve as documentation at the micro-level</span>, help ensure correctness..., and make refactoring code less stressful.
+> <span class="orange">serve as documentation at the micro-level</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -198,7 +212,7 @@ Wanted a language with a type system
 
 ## Reddit
 Wanted a language with a type system
-> Types serve as documentation at the micro-level, <span class="orange">help ensure correctness</span>..., and make refactoring code less stressful.
+> <span class="orange">help ensure correctness</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -206,7 +220,7 @@ Wanted a language with a type system
 
 ## Reddit
 Wanted a language with a type system
-> Types serve as documentation at the micro-level, help ensure correctness..., and make <span class="orange">refactoring code less stressful</span>.
+> <span class="orange">makes refactoring code less stressful</span>.
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -248,7 +262,14 @@ let michael: Person = {
 ---
 
 ## Reddit
-> <span class="orange">Another consideration was the speed of development.</span> We wanted to add types because we wanted to move quickly. 
+> <span class="orange">Another consideration was the speed of development.</span> 
+
+[source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
+
+---
+
+## Reddit
+> <span class="orange">We wanted to add types because we wanted to move quickly.</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -263,7 +284,7 @@ let michael: Person = {
 
 ## The result?
 
-> Using a typed language in our frontend has already paid dividends: our <span class="orange">code has fewer type-related bugs</span>, we are more confident making large refactors, and our inline documentation is focused around concepts instead of object shapes and function parameters. 
+> <span class="orange">our code has fewer type-related bugs</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -271,7 +292,7 @@ let michael: Person = {
 
 ## The result?
 
-> Using a typed language in our frontend has already paid dividends: our code has fewer type-related bugs, <span class="orange">we are more confident making large refactors</span>, and our inline documentation is focused around concepts instead of object shapes and function parameters. 
+> <span class="orange">we are more confident making large refactors</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -279,7 +300,7 @@ let michael: Person = {
 
 ## The result?
 
-> Using a typed language in our frontend has already paid dividends: our code has fewer type-related bugs, we are more confident making large refactors, and <span class="orange">our inline documentation is focused around concepts</span> instead of object shapes and function parameters. 
+> <span class="orange">our inline documentation is focused around concepts</span> instead of object shapes and function parameters. 
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -291,7 +312,15 @@ let michael: Person = {
 
 ## How about Slack?
 
-> First, we were <span class="orange">surprised by the number of small bugs we found when converting our code</span>... the more lines of code a human writes, the more inevitable it becomes to misspell a property, assume the parent of a nested object to always exist, or to use a non-standard error object.
+> <span class="orange">we were surprised by the number of small bugs we found when converting our code</span>... the more lines of code a human writes, the more inevitable it becomes to misspell a property, assume the parent of a nested object to always exist, or to use a non-standard error object.
+
+[source](https://slack.engineering/typescript-at-slack-a81307fa288d)
+
+---
+
+## How about Slack?
+
+> <span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to misspell a property, assume the parent of a nested object to always exist, or to use a non-standard error object.
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -299,7 +328,15 @@ let michael: Person = {
 
 ## Slack
 
-> Second, we <span class="orange">underestimated how powerful the editor integration is</span>... TypeScript understands which properties and methods are available on certain objects, enabling your editor to do the same.
+> Second, we <span class="orange">underestimated how powerful the editor integration is</span>
+
+[source](https://slack.engineering/typescript-at-slack-a81307fa288d)
+
+---
+
+## Slack
+
+> Second, we <span class="orange">TypeScript understands which properties and methods are available on certain objects</span>, enabling your editor to do the same.
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
@@ -520,11 +557,11 @@ function ajaxRequest(urlOrOptions: string | AjaxOptions) {}
 
 ---
 
-### Types add meaning to your code
+### Types add <span class="orange">meaning</span> to your code
 
 ---
 
-Ok, so you want to use a type system.  Which one?
+Ok, so you want to use a type system.  <span class="orange">Which one</span>?
 
 ---
 
@@ -604,11 +641,11 @@ More turnkey for .NET folks
 
 ---
 
-## Confession time
+## <span class="orange">Confession</span> time
 
 ---
 
-## Let's take you through some of the challenges
+## <span class="orange">Challenges</span>
 
 ---
 
@@ -645,4 +682,18 @@ Do you need to refactor often? <span class="orange">**YES**</span>
 
 ---
 
+## Getting Started
+
+typescriptlang.org  
+flow.org
+
+---
+
 # <span class="orange">Questions?</span>
+
+---
+
+## Thank you!
+
+[@schneidenbach](https://twitter.com/schneidenbach)  
+schneids.net
