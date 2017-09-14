@@ -33,7 +33,8 @@ Let's start with the
 
 ---
 
-# JAVASCRIPT IS <span class="orange">WEIRD</span>.
+## JAVASCRIPT IS 
+# <span class="orange">WEIRD</span>
 
 ---
 
@@ -119,7 +120,8 @@ Code | Returns
 
 ---
 
-# JAVASCRIPT IS <span class="orange">WEIRD</span>.
+## JAVASCRIPT IS 
+# <span class="orange">WEIRD</span>
 
 ---
 
@@ -213,7 +215,7 @@ Wanted a language with a type system
 ---
 
 ## Reddit
-### Types
+### Types:
 serve as <span class="orange">documentation at the micro-level</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
@@ -221,7 +223,7 @@ serve as <span class="orange">documentation at the micro-level</span>
 ---
 
 ## Reddit
-### Types
+### Types:
 help ensure <span class="orange">correctness</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
@@ -229,7 +231,7 @@ help ensure <span class="orange">correctness</span>
 ---
 
 ## Reddit
-### Types
+### Types:
 makes <span class="orange">refactoring code less stressful</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
@@ -286,7 +288,7 @@ We wanted to add types because we <span class="orange">wanted to move quickly</s
 ---
 
 ## Reddit
-> This sounds a bit antithetical to how many people view types, in that it adds overhead to development and therefore slows developers down. <span class="orange">However, in moving quickly, it is much easier to introduce bugs.</span>
+<span class="orange">in moving quickly, it is much easier to introduce bugs</span>
 
 [source](https://redditblog.com/2017/06/30/why-we-chose-typescript/)
 
@@ -330,7 +332,7 @@ we were surprised by the <span class="orange">number of small bugs we found</spa
 
 ## How about Slack?
 
-> <span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to:  
+<span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to:  
 misspell a property
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
@@ -339,7 +341,7 @@ misspell a property
 
 ## How about Slack?
 
-> <span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to:  
+<span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to:  
 assume the parent of a nested object to always exist
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
@@ -348,7 +350,7 @@ assume the parent of a nested object to always exist
 
 ## How about Slack?
 
-> <span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to:  
+<span class="orange">the more lines of code a human writes</span>, the more inevitable it becomes to:  
 use a non-standard error object
 
 [source](https://slack.engineering/typescript-at-slack-a81307fa288d)
