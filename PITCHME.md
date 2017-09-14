@@ -373,41 +373,6 @@ Second, we underestimated how <span class="orange">powerful the editor integrati
 
 ---
 
-###  Union types
-
-```typescript
-interface AjaxOptions {
-    url: string;
-    type: string;
-}
-
-function ajaxRequest(urlOrOptions: string | AjaxOptions) {}
-```
-
----
-
-###  Union types
-
-```typescript
-interface AjaxOptions {
-    url: string;
-    type: string;
-}
-
-function ajaxRequest(urlOrOptions: string | AjaxOptions) {
-    if (typeof urlOrOptions === "string") {
-        return $.get(urlOrOptions);
-    } else {
-        return $.ajax(urlOrOptions.url, {
-            type: urlOrOptions.type
-        });
-    }
-}
-
-```
-
----
-
 ## I love this line
 
 > An autocomplete system that only uses words in the current document <span class="orange">feels barbaric</span> afterward.
