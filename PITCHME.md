@@ -671,8 +671,8 @@ More turnkey for .NET folks
 
 ## Criteria for choosing
 
-Does your javascript need types if you're doing a small project? <span class="orange">**probably not**</span>  
-Does your javascript need types if you're adding an animation to a WebForms page stuck in a script tag? <span class="orange">**no**</span>  
+Does your JavaScript need types if you're doing a small project? <span class="orange">**probably not**</span>  
+Does your JavaScript need types if you're adding an animation to a WebForms page stuck in a script tag? <span class="orange">**no**</span>  
 Is the JS code base large? <span class="orange">**yes**</span>  
 Do you need to refactor often? <span class="orange">**YES**</span>
 
