@@ -8,10 +8,6 @@
 
 ---
 
-![](assets/polishflag.jpg)
-
----
-
 ![](assets/theweb.jpg)
 
 ---
